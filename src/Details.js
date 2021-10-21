@@ -1,6 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import axios from "axios";
 import {Spinner} from "react-bootstrap";
+import Summary from "./Summary";
 class Details extends Component {
 
     constructor() {
@@ -36,6 +37,8 @@ class Details extends Component {
 
         return (
             <Fragment>
+
+                <Summary summary={this.state.global} currentDate={this.state.currentDate} />
 
             </Fragment>
         );
